@@ -1,3 +1,7 @@
+import amazon from "../assets/amazon.png";
+import flipkart from "../assets/flipkart.png";
+import shoe from "../assets/shoe_image.png";
+
 const HeroSection = () => {
   return (
     <main className="hero">
@@ -17,17 +21,13 @@ const HeroSection = () => {
           <p>Also Available On</p>
 
           <div className="brand-icons">
-            <img src="/images/amazon.png" alt="amazon-logo" />
-            <img src="/images/flipkart.png" alt="flipkart-logo" />
+            <img src={amazon} alt="amazon-logo" />
+            <img src={flipkart} alt="flipkart-logo" />
           </div>
         </div>
       </div>
       <div className="hero-image">
-        <img
-          src="/images/shoe_image.png"
-          alt="hero-logo"
-          className="main-image"
-        />
+        <img src={shoe} alt="hero-logo" className="main-image" />
       </div>
     </main>
   );
